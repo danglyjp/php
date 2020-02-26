@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Change Character Color (Example02)</title>
+    <title>Change Character Color (Example03)</title>
 </head>
 <body>
 <form action="" method="get">
