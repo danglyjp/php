@@ -24,12 +24,14 @@ if ($mysql->connect_error) {
 $result= $mysql->query("select * from prefecturals");
 if($result->num_rows != 0){
     echo "<table border='1'><tr>";
-    echo "<th>PrefecturalID</th><th>PrefecturalName</th></tr>";
+    echo "<th>CustomerID</th><th>CustomerCode</th><th>CustomerName</th><th>Address</th></tr>";
     
 while ($row=$result->fetch_object()) {
     
-    $col1=$row->PrefecturalID;
-    $col2=$row->PrefecturalName;
+    $col1=$row->CustomerID;
+    $col2=$row->CustomerCode;
+    $col3=$row->CustomerName;
+    $col4=$row->Address;
     
 echo "<tr><td>".$col1."</td>";
 echo "<td>".$col2."</td></tr>";
